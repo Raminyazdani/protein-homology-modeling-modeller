@@ -1,0 +1,9 @@
+Ramin Yazdani | Protein Homology Modeling | main | feat(init): Initial repository with README
+
+Create initial repository structure with basic README file.
+
+The README contains the project title "Protein Homology Modeling" and a brief overview
+mentioning the use of MODELLER software for comparative modeling. This establishes
+the repository's purpose and primary technology stack.
+
+Verified: README.md created with project description.
