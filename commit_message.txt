@@ -1,9 +1,12 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(init): Initial repository with README
+Ramin Yazdani | Protein Homology Modeling | main | feat(config): Add basic Python .gitignore
 
-Create initial repository structure with basic README file.
+Add .gitignore file with essential Python exclusions.
 
-The README contains the project title "Protein Homology Modeling" and a brief overview
-mentioning the use of MODELLER software for comparative modeling. This establishes
-the repository's purpose and primary technology stack.
+Includes patterns for:
+- Python cache files (__pycache__/, *.pyc, *.pyo, *.pyd)
+- Python environment (.Python)
+- Virtual environments (venv/, ENV/, env/)
 
-Verified: README.md created with project description.
+These exclusions prevent version control clutter from Python artifacts.
+
+Verified: .gitignore created with Python-specific patterns.
