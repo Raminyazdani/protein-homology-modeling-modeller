@@ -16,3 +16,11 @@ env/
 *~
 .DS_Store
 Thumbs.db
+
+# MODELLER intermediate files
+*.V*
+*.D*
+*.ini
+*.rsr
+*.sch
+*.lck

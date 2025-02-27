@@ -1,12 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(config): Add IDE and OS exclusions to .gitignore
+Ramin Yazdani | Protein Homology Modeling | main | WIP(config): Add MODELLER file exclusions
 
-Extend .gitignore with IDE and operating system file exclusions.
+Extend .gitignore with MODELLER-specific intermediate file exclusions.
 
-Added patterns for:
-- IDE files (.vscode/, .idea/, *.swp, *.swo)
-- OS files (.DS_Store, Thumbs.db)
-- Editor backup files (*~)
+MODELLER generates many intermediate files during homology modeling runs:
+- Model files (*.V*, *.D*)
+- Configuration files (*.ini, *.lck)
+- Restraint files (*.rsr, *.sch)
 
-These additions prevent IDE-specific and OS-specific artifacts from being committed.
+These files should not be version controlled as they are generated outputs.
+Adding these exclusions before implementing MODELLER scripts.
 
-Verified: .gitignore extended with IDE/OS patterns.
+Verified: .gitignore includes MODELLER intermediate file patterns.
