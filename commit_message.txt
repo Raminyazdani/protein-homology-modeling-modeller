@@ -1,12 +1,12 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(config): Add basic Python .gitignore
+Ramin Yazdani | Protein Homology Modeling | main | WIP(config): Add IDE and OS exclusions to .gitignore
 
-Add .gitignore file with essential Python exclusions.
+Extend .gitignore with IDE and operating system file exclusions.
 
-Includes patterns for:
-- Python cache files (__pycache__/, *.pyc, *.pyo, *.pyd)
-- Python environment (.Python)
-- Virtual environments (venv/, ENV/, env/)
+Added patterns for:
+- IDE files (.vscode/, .idea/, *.swp, *.swo)
+- OS files (.DS_Store, Thumbs.db)
+- Editor backup files (*~)
 
-These exclusions prevent version control clutter from Python artifacts.
+These additions prevent IDE-specific and OS-specific artifacts from being committed.
 
-Verified: .gitignore created with Python-specific patterns.
+Verified: .gitignore extended with IDE/OS patterns.
