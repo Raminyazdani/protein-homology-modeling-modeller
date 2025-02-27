@@ -1,13 +1,12 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(config): Add MODELLER file exclusions
+Ramin Yazdani | Protein Homology Modeling | main | feat(config): Complete .gitignore with alignment and log exclusions
 
-Extend .gitignore with MODELLER-specific intermediate file exclusions.
+Complete .gitignore configuration with alignment file and log exclusions.
 
-MODELLER generates many intermediate files during homology modeling runs:
-- Model files (*.V*, *.D*)
-- Configuration files (*.ini, *.lck)
-- Restraint files (*.rsr, *.sch)
+Final additions include:
+- Alignment files (*.pir, *.ali, *.pap) - generated during sequence alignment
+- Log files (*.log) - MODELLER and Python logging output
+- Jupyter notebook checkpoints (.ipynb_checkpoints/)
 
-These files should not be version controlled as they are generated outputs.
-Adding these exclusions before implementing MODELLER scripts.
+The .gitignore is now complete and ready for development.
 
-Verified: .gitignore includes MODELLER intermediate file patterns.
+Verified: .gitignore contains all necessary exclusion patterns for the project.

@@ -24,3 +24,12 @@ Thumbs.db
 *.rsr
 *.sch
 *.lck
+
+# Generated alignment files
+*.pir
+*.ali
+*.pap
+
+# Logs
+*.log
+.ipynb_checkpoints/
