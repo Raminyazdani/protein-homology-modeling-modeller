@@ -1,12 +1,14 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(config): Complete .gitignore with alignment and log exclusions
+Ramin Yazdani | Protein Homology Modeling | main | feat(data): Add target protein sequence
 
-Complete .gitignore configuration with alignment file and log exclusions.
+Add target protein sequence in FASTA format.
 
-Final additions include:
-- Alignment files (*.pir, *.ali, *.pap) - generated during sequence alignment
-- Log files (*.log) - MODELLER and Python logging output
-- Jupyter notebook checkpoints (.ipynb_checkpoints/)
+The target_sequence.fasta file contains the amino acid sequence of the protein
+to be modeled. This is one of the two essential inputs for homology modeling.
 
-The .gitignore is now complete and ready for development.
+FASTA format:
+- Header line with sequence identifier
+- Amino acid sequence in single-letter code
 
-Verified: .gitignore contains all necessary exclusion patterns for the project.
+This sequence will be aligned to the template structure to build the homology model.
+
+Verified: target_sequence.fasta added with valid FASTA format.
