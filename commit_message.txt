@@ -1,14 +1,17 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(data): Add target protein sequence
+Ramin Yazdani | Protein Homology Modeling | main | feat(data): Add template PDB structure
 
-Add target protein sequence in FASTA format.
+Add template protein structure in PDB format.
 
-The target_sequence.fasta file contains the amino acid sequence of the protein
-to be modeled. This is one of the two essential inputs for homology modeling.
+The template.pdb file contains the 3D coordinates of a known protein structure
+that will serve as the template for homology modeling. The template should have
+significant sequence similarity to the target sequence.
 
-FASTA format:
-- Header line with sequence identifier
-- Amino acid sequence in single-letter code
+PDB format contains:
+- Atomic coordinates (ATOM/HETATM records)
+- Secondary structure information
+- Experimental metadata
 
-This sequence will be aligned to the template structure to build the homology model.
+With both target sequence and template structure, we can now implement the
+homology modeling workflow.
 
-Verified: target_sequence.fasta added with valid FASTA format.
+Verified: template.pdb added with valid PDB structure format.
