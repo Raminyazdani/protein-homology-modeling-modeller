@@ -1,17 +1,15 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(data): Add template PDB structure
+Ramin Yazdani | Protein Homology Modeling | main | feat(deps): Add Python dependencies
 
-Add template protein structure in PDB format.
+Add requirements.txt with BioPython dependency.
 
-The template.pdb file contains the 3D coordinates of a known protein structure
-that will serve as the template for homology modeling. The template should have
-significant sequence similarity to the target sequence.
+The requirements.txt file specifies:
+- biopython: For biological sequence and structure manipulation
 
-PDB format contains:
-- Atomic coordinates (ATOM/HETATM records)
-- Secondary structure information
-- Experimental metadata
+BioPython provides useful utilities for:
+- Parsing FASTA sequences
+- Handling PDB structure files
+- Sequence alignment operations
 
-With both target sequence and template structure, we can now implement the
-homology modeling workflow.
+Install with: pip install -r requirements.txt
 
-Verified: template.pdb added with valid PDB structure format.
+Verified: requirements.txt created with biopython dependency.
