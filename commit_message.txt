@@ -1,15 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(deps): Add Python dependencies
+Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Create build_model.py skeleton
 
-Add requirements.txt with BioPython dependency.
+Create build_model.py with basic structure and imports.
 
-The requirements.txt file specifies:
-- biopython: For biological sequence and structure manipulation
+Initial implementation includes:
+- MODELLER imports (modeller, automodel)
+- OS and sys imports for path handling
+- Script directory detection using __file__
+- Empty main() function structure
 
-BioPython provides useful utilities for:
-- Parsing FASTA sequences
-- Handling PDB structure files
-- Sequence alignment operations
+This establishes the script architecture before adding complex modeling logic.
 
-Install with: pip install -r requirements.txt
-
-Verified: requirements.txt created with biopython dependency.
+Verified: build_model.py created with proper imports and structure.
