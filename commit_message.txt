@@ -1,13 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Add MODELLER environment setup
+Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Add file path definitions
 
-Add MODELLER environment initialization to build_model.py.
+Add file path definitions to build_model.py using os.path.join().
 
-Extended implementation includes:
-- Environ object creation
-- Environment configuration for MODELLER
-- Basic main() implementation with environment setup
+Implementation now includes:
+- Robust path handling using os.path.join(script_dir, filename)
+- Template PDB path definition
+- Target sequence FASTA path definition
 
-The MODELLER environment must be configured before any modeling operations.
-This sets up the MODELLER library with appropriate parameters.
+Using os.path.join ensures cross-platform compatibility and allows the script
+to be run from any directory location.
 
-Verified: build_model.py includes MODELLER environment initialization.
+Verified: build_model.py has proper path handling for all input files.
