@@ -1,13 +1,12 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Add file path definitions
+Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Add alignment object creation
 
-Add file path definitions to build_model.py using os.path.join().
+Add alignment object creation to build_model.py.
 
-Implementation now includes:
-- Robust path handling using os.path.join(script_dir, filename)
-- Template PDB path definition
-- Target sequence FASTA path definition
+Extended implementation includes:
+- Alignment object instantiation from MODELLER environment
+- Alignment configuration for sequence-structure alignment
 
-Using os.path.join ensures cross-platform compatibility and allows the script
-to be run from any directory location.
+The alignment is the foundation for homology modeling - it establishes the
+correspondence between target sequence and template structure coordinates.
 
-Verified: build_model.py has proper path handling for all input files.
+Verified: build_model.py creates alignment object correctly.

@@ -14,7 +14,10 @@ def main():
     template_pdb_path = os.path.join(script_dir, "template.pdb")
     target_sequence_fasta_path = os.path.join(script_dir, "target_sequence.fasta")
     
-    # TODO: Create alignment and build model
+    # Create alignment object
+    aln = Alignment(env)
+    
+    # TODO: Load template and add target sequence
 
 if __name__ == "__main__":
     main()
