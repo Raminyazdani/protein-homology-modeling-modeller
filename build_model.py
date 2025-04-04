@@ -17,7 +17,11 @@ def main():
     # Create alignment object
     aln = Alignment(env)
     
-    # TODO: Load template and add target sequence
+    # Load template structure
+    mdl = Model(env, file=template_pdb_path)
+    aln.append_model(mdl, align_codes='template')
+    
+    # TODO: Add target sequence and build model
 
 if __name__ == "__main__":
     main()

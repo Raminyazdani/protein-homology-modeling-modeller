@@ -1,12 +1,14 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Add alignment object creation
+Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Add template structure loading
 
-Add alignment object creation to build_model.py.
+Add template structure loading code to build_model.py.
 
-Extended implementation includes:
-- Alignment object instantiation from MODELLER environment
-- Alignment configuration for sequence-structure alignment
+Implementation now includes:
+- Template model addition to alignment
+- Model sequence extraction from PDB structure
+- Alignment preparation for target sequence addition
 
-The alignment is the foundation for homology modeling - it establishes the
-correspondence between target sequence and template structure coordinates.
+The template structure is loaded and its sequence is extracted, preparing the
+alignment for the target sequence. This establishes the template side of the
+sequence-structure correspondence.
 
-Verified: build_model.py creates alignment object correctly.
+Verified: build_model.py loads template structure into alignment.
