@@ -1,14 +1,15 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Add template structure loading
+Ramin Yazdani | Protein Homology Modeling | main | feat(modeling): Complete build_model.py implementation
 
-Add template structure loading code to build_model.py.
+Complete build_model.py with full automodel functionality.
 
-Implementation now includes:
-- Template model addition to alignment
-- Model sequence extraction from PDB structure
-- Alignment preparation for target sequence addition
+Final implementation includes:
+- Target sequence addition to alignment
+- AutoModel configuration with template and target
+- Model building and optimization
+- Output PDB file generation
 
-The template structure is loaded and its sequence is extracted, preparing the
-alignment for the target sequence. This establishes the template side of the
-sequence-structure correspondence.
+The script can now generate homology models from sequence and template inputs.
+The automodel class handles model building, energy minimization, and structure
+optimization automatically.
 
-Verified: build_model.py loads template structure into alignment.
+Verified: build_model.py is complete and ready for model generation.
