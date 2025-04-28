@@ -1,15 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(modeling): Complete build_model.py implementation
+Ramin Yazdani | Protein Homology Modeling | main | WIP(modeling): Create build_model_with_hydrogens.py skeleton
 
-Complete build_model.py with full automodel functionality.
+Create build_model_with_hydrogens.py with basic structure.
 
-Final implementation includes:
-- Target sequence addition to alignment
-- AutoModel configuration with template and target
-- Model building and optimization
-- Output PDB file generation
+Initial implementation similar to build_model.py but will include explicit
+hydrogen atoms in the model. This is useful for:
+- Hydrogen bond analysis
+- Electrostatic calculations
+- Detailed structural analysis
 
-The script can now generate homology models from sequence and template inputs.
-The automodel class handles model building, energy minimization, and structure
-optimization automatically.
+The skeleton includes imports and basic structure setup.
 
-Verified: build_model.py is complete and ready for model generation.
+Verified: build_model_with_hydrogens.py created with proper structure.
