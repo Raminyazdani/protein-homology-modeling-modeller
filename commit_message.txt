@@ -1,15 +1,10 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(outputs): Add generated model PDB files
+Ramin Yazdani | Protein Homology Modeling | main | fix(modeling): Correct typo in code comments
 
-Add generated homology model output files.
+Fix typo in code comments found in previous commit.
 
-Added model outputs:
-- modeller_model_default.pdb: Model built with default parameters
-- modeller_model_hydrogen.pdb: Model with explicit hydrogen atoms
+Corrected "alignement" → "alignment" in code comments in build_model.py.
 
-These are example outputs demonstrating what the scripts produce when run
-with MODELLER. Both files are in standard PDB format.
+This typo was accidentally introduced when adding the model output files.
+Spotted immediately during code review and corrected.
 
-Note: In the process of adding these files, accidentally introduced a typo
-in code comments ("alignement" instead of "alignment").
-
-Verified: Model PDB files added (but code has typo).
+Verified: Spelling error fixed in comments.
