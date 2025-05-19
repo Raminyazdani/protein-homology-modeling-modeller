@@ -1,4 +1,3 @@
-from Bio import SeqIO
 from modeller import *
 from modeller.automodel import *
 import sys

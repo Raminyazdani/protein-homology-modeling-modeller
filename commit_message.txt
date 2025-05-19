@@ -1,10 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | fix(modeling): Correct typo in code comments
+Ramin Yazdani | Protein Homology Modeling | main | feat(quality): Clean up code formatting
 
-Fix typo in code comments found in previous commit.
+Clean up code formatting in both modeling scripts.
 
-Corrected "alignement" → "alignment" in code comments in build_model.py.
+Improvements include:
+- Consistent indentation
+- Proper spacing around operators
+- Clear section comments
+- Removed any redundant blank lines
 
-This typo was accidentally introduced when adding the model output files.
-Spotted immediately during code review and corrected.
+No functional changes - this is purely code quality and readability improvement.
 
-Verified: Spelling error fixed in comments.
+Verified: Both scripts have consistent, clean formatting.
