@@ -1,13 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(quality): Clean up code formatting
+Ramin Yazdani | Protein Homology Modeling | main | feat(comparison): Add Swiss-Model prediction
 
-Clean up code formatting in both modeling scripts.
+Add Swiss-Model prediction for multi-method comparison.
 
-Improvements include:
-- Consistent indentation
-- Proper spacing around operators
-- Clear section comments
-- Removed any redundant blank lines
+Added swiss_model.pdb:
+- Alternative homology model from Swiss-Model web server
+- Enables comparison between MODELLER and Swiss-Model approaches
+- Useful for validating modeling results
 
-No functional changes - this is purely code quality and readability improvement.
+Swiss-Model is a widely-used alternative to MODELLER for homology modeling.
+Including this comparison demonstrates consideration of multiple methodologies.
 
-Verified: Both scripts have consistent, clean formatting.
+Verified: swiss_model.pdb added for comparative analysis.
