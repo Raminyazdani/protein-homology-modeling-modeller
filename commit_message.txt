@@ -1,13 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(comparison): Add Swiss-Model prediction
+Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Overview and Problem sections
 
-Add Swiss-Model prediction for multi-method comparison.
+Add Overview and Problem sections to README.
 
-Added swiss_model.pdb:
-- Alternative homology model from Swiss-Model web server
-- Enables comparison between MODELLER and Swiss-Model approaches
-- Useful for validating modeling results
+Added documentation:
+- Overview: Project purpose and comparative modeling approach
+- Problem: Describes the 3D structure prediction challenge
+- Approach: High-level methodology using MODELLER
 
-Swiss-Model is a widely-used alternative to MODELLER for homology modeling.
-Including this comparison demonstrates consideration of multiple methodologies.
+These sections provide context for users to understand what the project does
+and why homology modeling is useful.
 
-Verified: swiss_model.pdb added for comparative analysis.
+Verified: README has clear overview and problem statement.
