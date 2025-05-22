@@ -1,13 +1,14 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Overview and Problem sections
+Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Tech Stack section
 
-Add Overview and Problem sections to README.
+Add Tech Stack section to README.
 
-Added documentation:
-- Overview: Project purpose and comparative modeling approach
-- Problem: Describes the 3D structure prediction challenge
-- Approach: High-level methodology using MODELLER
+Documented technologies:
+- Python 3.x (core scripting language)
+- BioPython (sequence and structure analysis)
+- MODELLER (homology modeling engine)
+- PyMOL (optional visualization)
 
-These sections provide context for users to understand what the project does
-and why homology modeling is useful.
+Each technology is described with its role in the project. This helps users
+understand the dependencies and what each component does.
 
-Verified: README has clear overview and problem statement.
+Verified: README documents complete technology stack.
