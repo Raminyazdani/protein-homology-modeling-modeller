@@ -19,3 +19,10 @@ pip install -r requirements.txt
    - Register at https://salilab.org/modeller/
    - Download and install for your platform
    - Configure license key (free for academic use)
+
+## How to Run
+
+```bash
+cd protein-homology-modeling-modeller
+python run_modeling.py  # This script doesn't exist!
+```
