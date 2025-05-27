@@ -1,13 +1,10 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Setup section
+Ramin Yazdani | Protein Homology Modeling | main | fix(docs): Correct dependency name in setup instructions
 
-Add Setup/Installation section to README.
+Fix incorrect dependency name in README setup instructions.
 
-Added documentation for:
-- Python dependency installation
-- MODELLER installation and license setup
-- Optional PyMOL installation
+Corrected "biotools" → "biopython" in pip install command.
 
-Note: Accidentally wrote "biotools" instead of "biopython" in the pip install
-command. This will be fixed in the next commit.
+The package name is "biopython" not "biotools". This error was introduced
+in the previous commit and spotted immediately during review.
 
-Verified: Setup instructions added (but dependency name is wrong).
+Verified: Correct package name now in setup instructions.
