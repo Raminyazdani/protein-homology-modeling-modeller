@@ -1,10 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | fix(docs): Correct dependency name in setup instructions
+Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README How to Run section
 
-Fix incorrect dependency name in README setup instructions.
+Add How to Run section to README.
 
-Corrected "biotools" → "biopython" in pip install command.
+Added usage instructions:
+- Directory navigation command
+- Script execution commands for both variants
+- Optional visualization with PyMOL
 
-The package name is "biopython" not "biotools". This error was introduced
-in the previous commit and spotted immediately during review.
+Clear step-by-step instructions help users run the project after installation.
+Includes both default and hydrogen modeling variants.
 
-Verified: Correct package name now in setup instructions.
+Verified: README has complete usage instructions.

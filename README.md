@@ -24,5 +24,6 @@ pip install -r requirements.txt
 
 ```bash
 cd protein-homology-modeling-modeller
-python run_modeling.py  # This script doesn't exist!
+python build_model.py
+python build_model_with_hydrogens.py
 ```
