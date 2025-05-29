@@ -1,13 +1,14 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README How to Run section
+Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Data/Inputs section
 
-Add How to Run section to README.
+Add Data/Inputs section to README.
 
-Added usage instructions:
-- Directory navigation command
-- Script execution commands for both variants
-- Optional visualization with PyMOL
+Documented:
+- Input file descriptions (target_sequence.fasta, template.pdb)
+- Data source information (UniProt, GenBank, PDB)
+- Data location (included in project)
+- File format specifications
 
-Clear step-by-step instructions help users run the project after installation.
-Includes both default and hydrogen modeling variants.
+This section explains where the input data comes from and how users can
+obtain or provide their own data files.
 
-Verified: README has complete usage instructions.
+Verified: README documents input data requirements.
