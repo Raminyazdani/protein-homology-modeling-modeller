@@ -1,14 +1,16 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Data/Inputs section
+Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Outputs section
 
-Add Data/Inputs section to README.
+Add Outputs section to README.
 
-Documented:
-- Input file descriptions (target_sequence.fasta, template.pdb)
-- Data source information (UniProt, GenBank, PDB)
-- Data location (included in project)
-- File format specifications
+Documented expected outputs:
+- modeller_model_default.pdb (default parameters)
+- modeller_model_hydrogen.pdb (with hydrogens)
+- swiss_model.pdb (comparison model)
+- Model quality metrics (RMSD, DOPE scores)
+- Alignment results
+- Visualization-ready PDB files
 
-This section explains where the input data comes from and how users can
-obtain or provide their own data files.
+This section helps users understand what files will be generated and what
+information they contain.
 
-Verified: README documents input data requirements.
+Verified: README describes all output files.
