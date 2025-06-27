@@ -1,16 +1,15 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(quality): Code quality review and verification
+Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Reproducibility section
 
-Perform comprehensive code quality review.
+Add Reproducibility Notes section to README.
 
-Review checklist:
-- ✓ All paths use os.path.join (cross-platform compatible)
-- ✓ No hardcoded absolute paths
-- ✓ Imports are necessary and correct
-- ✓ Comments are clear and helpful
-- ✓ Code follows consistent style
-- ✓ Error-free Python syntax
+Documented reproducibility considerations:
+- MODELLER version effects on exact coordinates
+- Random seed configuration for reproducibility
+- Relative path usage
+- PDB format version (v3.3)
+- Swiss-Model result source
 
-This quality gate ensures the codebase is clean and maintainable before
-adding final documentation.
+These notes help users understand factors that may affect exact reproducibility
+and how to control them.
 
-Verified: Code quality meets standards.
+Verified: README includes reproducibility guidance.
