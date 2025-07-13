@@ -1,15 +1,18 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(docs): Add README Reproducibility section
+Ramin Yazdani | Protein Homology Modeling | main | feat(docs): Complete README with Troubleshooting and License
 
-Add Reproducibility Notes section to README.
+Complete README with Troubleshooting and License sections.
 
-Documented reproducibility considerations:
-- MODELLER version effects on exact coordinates
-- Random seed configuration for reproducibility
-- Relative path usage
-- PDB format version (v3.3)
-- Swiss-Model result source
+Added final sections:
+- Troubleshooting: Common issues and solutions
+  - Import errors, MODELLER not found, PDB parsing errors, PyMOL alternatives
+  - Path issues and best practices
+- License & Attribution: 
+  - MODELLER licensing information
+  - Alternative tools (Swiss-Model)
+  - Quality considerations
+  - Typical pipeline overview
 
-These notes help users understand factors that may affect exact reproducibility
-and how to control them.
+The README is now comprehensive and portfolio-grade with all necessary
+information for setup, usage, and troubleshooting.
 
-Verified: README includes reproducibility guidance.
+Verified: README is complete and professional.
