@@ -1,18 +1,15 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(metadata): Add project_identity.md
+Ramin Yazdani | Protein Homology Modeling | main | WIP(config): Add GitHub Copilot instructions
 
-Add project_identity.md with professional metadata.
+Add .github/copilot-instructions.md for AI-assisted development.
 
-Created comprehensive project identity documentation:
-- Professional Display Title
-- Repository slug suggestion
-- Tagline for portfolio presentation
-- GitHub description
-- Primary stack summary
-- Topics/keywords for discoverability
-- Problem statement and approach
-- Input/output specifications
+Created Copilot configuration:
+- Project-specific context and guidelines
+- Code style preferences
+- Architecture patterns
+- Testing approach
+- Documentation standards
 
-This metadata is used for portfolio presentation and GitHub repository
-configuration. It helps with project discoverability and professional framing.
+These instructions help GitHub Copilot provide better, context-aware suggestions
+when working on the project. Improves future AI-assisted development.
 
-Verified: project_identity.md complete with all metadata sections.
+Verified: .github/copilot-instructions.md created.
