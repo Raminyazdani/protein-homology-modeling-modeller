@@ -1,13 +1,15 @@
-Ramin Yazdani | Protein Homology Modeling | main | feat(config): Add GitHub issue templates
+Ramin Yazdani | Protein Homology Modeling | main | WIP(verification): Verify project_identity alignment
 
-Add .github/ISSUE_TEMPLATE/ configuration.
+Review and verify project_identity.md for accuracy.
 
-Created issue template configuration:
-- Template for portfolio/historian workflow
-- Configuration for issue forms
-- Structured issue reporting
+Verification checklist:
+- ✓ Display title matches README
+- ✓ Tagline is accurate and compelling
+- ✓ Tech stack matches actual usage
+- ✓ Problem statement aligns with README
+- ✗ ISSUE: Some keywords don't match between project_identity and README topics
 
-Issue templates improve project maintainability by providing structured
-formats for reporting issues, requesting features, or documenting workflows.
+Found mismatch in keywords - project_identity.md includes some keywords not
+reflected in README, and vice versa. This needs to be fixed for consistency.
 
-Verified: .github/ISSUE_TEMPLATE/ directory created with templates.
+Verified: Metadata mostly aligned (but keywords need fixing).
