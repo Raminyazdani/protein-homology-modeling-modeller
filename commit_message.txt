@@ -1,15 +1,13 @@
-Ramin Yazdani | Protein Homology Modeling | main | WIP(ledger): Add suggestion.txt audit ledger
+Ramin Yazdani | Protein Homology Modeling | main | feat(ledger): Add suggestions_done.txt change log
 
-Add suggestion.txt documenting pre-change audit findings.
+Add suggestions_done.txt documenting applied changes.
 
-Created comprehensive audit ledger:
-- 15 issues identified during portfolio-readiness transformation
-- Categories: RENAME, TRACE, STRUCTURE, DOC
-- Each entry includes: TYPE, FILE, LOCATOR, BEFORE_SNIPPET, PROPOSED_CHANGE, RATIONALE, STATUS
-- All issues marked as APPLIED
+Created detailed change log:
+- 11 changes documented with before/after snippets
+- Includes: file renames, code cleanup, README updates, .gitignore creation
+- Each entry has: FILE, LOCATOR, BEFORE_SNIPPET, AFTER_SNIPPET, NOTES
 
-This ledger documents what was changed from the academic assignment version
-to the professional portfolio version. Provides complete transparency about
-the transformation process.
+This ledger shows the actual changes made, with specific before/after content
+for verification. Complements suggestion.txt by showing what was done.
 
-Verified: suggestion.txt created with all audit findings.
+Verified: suggestions_done.txt created with complete change documentation.
