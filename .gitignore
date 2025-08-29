@@ -1,16 +1,41 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
+*.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Virtual environments
 venv/
 ENV/
 env/
+.venv
 
-# MODELLER intermediate files
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# MODELLER output files
 *.V*
 *.D*
 *.ini
@@ -18,18 +43,20 @@ env/
 *.sch
 *.lck
 
-# Generated alignment files
+# PIR alignment files (generated)
 *.pir
+
+# ALI alignment files (generated)
 *.ali
+
+# PAP alignment files (generated)
 *.pap
 
-# IDE and OS
-.vscode/
-.idea/
-.DS_Store
-*.swp
-*.swo
-
-# Logs
+# Log files
 *.log
-.ipynb_checkpoints/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS
+Thumbs.db
