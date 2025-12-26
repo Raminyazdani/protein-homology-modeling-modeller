@@ -1,26 +1,47 @@
-# Protein Homology Modeling with MODELLER
+# Protein Homology Modeling
 
 **Comparative modeling and structure prediction using MODELLER**
 
+**Stack:** Python, BioPython, MODELLER, PyMOL
+
 ## Overview
 
-This project implements protein homology modeling workflows using MODELLER software and BioPython. The goal is to predict 3D protein structures from sequence data using comparative modeling techniques.
+This project demonstrates protein homology modeling workflows, focusing on comparative modeling techniques to predict 3D protein structures from sequence data. The implementation uses MODELLER for structure generation.
 
-## Project Status
+## Problem & Approach
 
-Initial repository setup - in development.
+**Problem:** Predict the 3D structure of a target protein using homology modeling techniques.
 
-## Requirements
+**Approach:**
+- Identify suitable template structures based on sequence similarity
+- Build homology models using MODELLER software
+- Generate multiple models with different parameters
+- Perform structural quality assessment and validation
 
-- Python 3.x
-- BioPython
-- MODELLER (requires separate installation and license)
-- PyMOL (optional, for visualization)
+## Tech Stack
 
-## Setup
+- **Python 3.x** - Core scripting language
+- **BioPython** - Biological sequence and structure analysis
+- **MODELLER** - Homology modeling software
+- **PyMOL** - Molecular structure visualization
 
-Installation instructions will be added as the project develops.
+## Repository Structure
 
-## License
+```
+protein-homology-modeling-modeller/
+├── build_model.py                   # Main modeling script (default parameters)
+├── build_model_with_hydrogens.py    # Modeling script with explicit hydrogens
+├── target_sequence.fasta            # Target protein sequence
+├── template.pdb                     # Template structure
+├── modeller_output.pdb              # Generated homology model (default)
+├── modeller_hydrogen.pdb            # Model with explicit hydrogens
+├── requirements.txt                 # Python dependencies
+├── .gitignore                       # Git exclusions
+└── README.md                        # This file
+```
 
-To be determined.
+## Outputs
+
+- `modeller_output.pdb` - Homology model with default MODELLER parameters
+- `modeller_hydrogen.pdb` - Model with explicit hydrogen atoms
+- Model quality assessment metrics (RMSD, DOPE scores)
