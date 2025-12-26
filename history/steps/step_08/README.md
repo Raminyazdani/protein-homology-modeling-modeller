@@ -1,4 +1,4 @@
-# Protein Homology Modeling
+# Protein Homology Modeling with MODELLER
 
 **Comparative modeling and structure prediction using MODELLER**
 
@@ -49,16 +49,10 @@ protein-homology-modeling-modeller/
 pip install -r requirements.txt
 ```
 
-Or manually:
-```bash
-pip install biopython
-```
-
 2. **Install MODELLER (required for model generation):**
    - Register at https://salilab.org/modeller/
    - Download and install for your platform
    - Configure license key (free for academic use)
-   - Follow platform-specific installation instructions
 
 3. **Optional: Install PyMOL for visualization:**
    - Download from https://pymol.org/
@@ -73,10 +67,7 @@ cd protein-homology-modeling-modeller
 
 2. **Run modeling scripts:**
 ```bash
-# Build homology model with default parameters
 python build_model.py
-
-# Build homology model with explicit hydrogen atoms
 python build_model_with_hydrogens.py
 ```
 
@@ -88,56 +79,21 @@ pymol modeller_model_default.pdb template.pdb
 ## Data / Inputs
 
 **Input Files:**
-- `target_sequence.fasta` - Target protein amino acid sequence in FASTA format
-- `template.pdb` - Known template structure in PDB format (homologous protein)
-
-**Data Source:** 
-- Sequences from protein databases (UniProt/GenBank)
-- Template structures from Protein Data Bank (PDB)
+- `target_sequence.fasta` - Target protein sequence in FASTA format
+- `template.pdb` - Template structure in PDB format
 
 **Data Location:** All input files are included in the project directory
 
 ## Outputs
 
-- `modeller_model_default.pdb` - Homology model with default MODELLER parameters
+- `modeller_model_default.pdb` - Homology model with default parameters
 - `modeller_model_hydrogen.pdb` - Model with explicit hydrogen atoms
-- `swiss_model.pdb` - Comparative model from Swiss-Model web server
-- Model quality assessment metrics (RMSD, DOPE scores)
-- Structural alignment results
-- Visualization-ready PDB files
-
-## Reproducibility Notes
-
-- MODELLER version may affect exact atomic coordinates
-- Random seed in modeling can be set for reproducibility
-- All file paths are relative to project root directory
-- PDB files follow standard Protein Data Bank format (v3.3)
-- Swiss-Model results obtained from https://swissmodel.expasy.org/
+- `swiss_model.pdb` - Comparative model from Swiss-Model
+- Model quality metrics (RMSD, DOPE scores)
 
 ## Troubleshooting
 
 **Common Issues:**
-
+- **MODELLER not found:** Verify installation and license key
 - **Import errors:** Install dependencies with `pip install biopython`
-- **MODELLER not found:** 
-  - Verify MODELLER installation
-  - Check license key configuration
-  - Ensure MODELLER Python bindings are in PYTHONPATH
-- **PDB parsing errors:** 
-  - Validate PDB file format using PDB validation tools
-  - Check for missing residues or non-standard atom names
-- **PyMOL unavailable:** Use alternative viewers:
-  - ChimeraX (https://www.cgl.ucsf.edu/chimerax/)
-  - VMD (https://www.ks.uiuc.edu/Research/vmd/)
-  - Swiss-PdbViewer
-
-**Path Issues:**
-- Always run scripts from the project root directory
-- Use relative paths for portability
-
-## License & Attribution
-
-- MODELLER requires free academic license (commercial licenses available)
-- Swiss-Model provides web-based alternative modeling
-- Model quality depends on template selection and sequence identity
-- Typical pipeline: sequence alignment → model building → quality assessment → visualization
+- **Path Issues:** Always run scripts from the project root directory

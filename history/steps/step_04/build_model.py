@@ -12,13 +12,6 @@ script_dir = os.path.dirname(__file__)
 def main(template_pdb_path, target_sequence_fasta_path, output_ali_file_path, output_pap_file_path):
 
     env = Environ()
-
-    # Read in HETATM records from template PDBs
-
-    # TODO: Add code here
-    # env.io.hetatm = False
-    env.io.hydrogen = True
-
     aln = Alignment(env)
     mdl = Model(env, file=f'{template_pdb_path}', model_segment=('FIRST:A','LAST:A'))
     aln.append_model(mdl, align_codes='template', atom_files=f'{template_pdb_path}')
@@ -26,7 +19,6 @@ def main(template_pdb_path, target_sequence_fasta_path, output_ali_file_path, ou
     # converting raw fasta format to PIR file using modeller
     a = alignment(env, file=f'{target_sequence_fasta_path}', alignment_format='FASTA')
     a.write(file=f'{target_sequence_fasta_path.split(".")[0] + ".pir"}', alignment_format='PIR',)
-
 
     aln.append(file=f'{target_sequence_fasta_path.split(".")[0] + ".pir"}', align_codes='target_sequence')
     aln.align2d(max_gap_length=50)
@@ -43,16 +35,15 @@ def main(template_pdb_path, target_sequence_fasta_path, output_ali_file_path, ou
 
 if __name__ == "__main__":
 
-
-    # template_pdb_path = os.path.join(script_dir, "template.pdb")
     template_pdb_path = os.path.join(script_dir, "template.pdb")
 
-    # target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta") # HINT: check Modeller tutorial TvLDH.ali
-    target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta") # HINT: check Modeller tutorial TvLDH.ali
+    target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta")
 
-    output_ali_file_path = os.path.join(script_dir, "target_sequence_2.ali")
+    output_ali_file_path = os.path.join(script_dir, "target_sequence_1.ali")
 
-    output_pap_file_path = os.path.join(script_dir, "template_2.pap")
+    output_pap_file_path = os.path.join(script_dir, "template_1.pap")
+
+    ### ALL PATHS SHOULD BE SAME FOLDER AS SCRIPT!!!
 
     if template_pdb_path == None:
         print(f"Update the template_pdb_path")

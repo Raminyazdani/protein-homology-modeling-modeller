@@ -1,0 +1,5 @@
+biopython>=1.79
+numpy>=1.21.0
+# MODELLER requires separate installation and license
+# Download from: https://salilab.org/modeller/
+# pymol-open-source  # Optional, for visualization
