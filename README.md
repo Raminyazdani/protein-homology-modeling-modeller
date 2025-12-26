@@ -26,18 +26,19 @@ This project demonstrates protein homology modeling workflows, focusing on compa
 - **MODELLER** - Homology modeling software
 - **PyMOL** - Molecular structure visualization
 
-## Folder Structure
+## Repository Structure
 
 ```
-raya00001_7068679-assignment4/
-├── assignment4_1_template.py       # Main modeling script
-├── assignment4_2_template.py       # Analysis and comparison script
-├── target_sequence.fasta           # Target protein sequence
-├── template.pdb                    # Template structure
-├── modeller_model_default.pdb      # Generated homology model
-├── modeller_model_hydrogen.pdb     # Model with explicit hydrogens
-├── swiss_model.pdb                 # Swiss-Model prediction
-├── requirements.txt                # Python dependencies
+protein-homology-modeling-modeller/
+├── build_model.py                   # Main modeling script (default parameters)
+├── build_model_with_hydrogens.py    # Modeling script with explicit hydrogens
+├── target_sequence.fasta            # Target protein sequence
+├── template.pdb                     # Template structure
+├── modeller_model_default.pdb       # Generated homology model
+├── modeller_model_hydrogen.pdb      # Model with explicit hydrogens
+├── swiss_model.pdb                  # Swiss-Model prediction (for comparison)
+├── requirements.txt                 # Python dependencies
+├── .gitignore                       # Git exclusions
 └── README.md                        # This file
 ```
 
@@ -67,13 +68,16 @@ pip install biopython
 
 1. **Navigate to project directory:**
 ```bash
-cd raya00001_7068679-assignment4
+cd protein-homology-modeling-modeller
 ```
 
 2. **Run modeling scripts:**
 ```bash
-python assignment4_1_template.py
-python assignment4_2_template.py
+# Build homology model with default parameters
+python build_model.py
+
+# Build homology model with explicit hydrogen atoms
+python build_model_with_hydrogens.py
 ```
 
 3. **Visualize structures (optional):**
@@ -131,9 +135,8 @@ pymol modeller_model_default.pdb template.pdb
 - Always run scripts from the project root directory
 - Use relative paths for portability
 
-## Notes
+## License & Attribution
 
-- Originally created in an academic setting
 - MODELLER requires free academic license (commercial licenses available)
 - Swiss-Model provides web-based alternative modeling
 - Model quality depends on template selection and sequence identity

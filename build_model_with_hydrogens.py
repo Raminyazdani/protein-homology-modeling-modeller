@@ -13,10 +13,7 @@ def main(template_pdb_path, target_sequence_fasta_path, output_ali_file_path, ou
 
     env = Environ()
 
-    # Read in HETATM records from template PDBs
-
-    # TODO: Add code here
-    # env.io.hetatm = False
+    # Enable explicit hydrogen atom modeling
     env.io.hydrogen = True
 
     aln = Alignment(env)
@@ -43,12 +40,9 @@ def main(template_pdb_path, target_sequence_fasta_path, output_ali_file_path, ou
 
 if __name__ == "__main__":
 
-
-    # template_pdb_path = os.path.join(script_dir, "template.pdb")
     template_pdb_path = os.path.join(script_dir, "template.pdb")
 
-    # target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta") # HINT: check Modeller tutorial TvLDH.ali
-    target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta") # HINT: check Modeller tutorial TvLDH.ali
+    target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta")
 
     output_ali_file_path = os.path.join(script_dir, "target_sequence_2.ali")
 

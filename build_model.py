@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     template_pdb_path = os.path.join(script_dir, "template.pdb")
 
-    target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta") # HINT: check Modeller tutorial TvLDH.ali
+    target_sequence_fasta_path = os.path.join(script_dir,"target_sequence.fasta")
 
     output_ali_file_path = os.path.join(script_dir, "target_sequence_1.ali")
 
