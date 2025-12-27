@@ -4,11 +4,4 @@
 
 ## Overview
 
-This project demonstrates protein homology modeling workflows using MODELLER software to predict 3D protein structures from sequence data.
-
-## Coming Soon
-
-- Setup instructions
-- Usage examples
-- Data requirements
-- Analysis tools
+This project demonstrates protein homology modeling workflows using MODELLER software.
