@@ -1,26 +1,14 @@
-# Protein Homology Modeling with MODELLER
+# Protein Homology Modeling
 
 **Comparative modeling and structure prediction using MODELLER**
 
 ## Overview
 
-This project implements protein homology modeling workflows using MODELLER software and BioPython. The goal is to predict 3D protein structures from sequence data using comparative modeling techniques.
+This project demonstrates protein homology modeling workflows using MODELLER software to predict 3D protein structures from sequence data.
 
-## Project Status
+## Coming Soon
 
-Initial repository setup - in development.
-
-## Requirements
-
-- Python 3.x
-- BioPython
-- MODELLER (requires separate installation and license)
-- PyMOL (optional, for visualization)
-
-## Setup
-
-Installation instructions will be added as the project develops.
-
-## License
-
-To be determined.
+- Setup instructions
+- Usage examples
+- Data requirements
+- Analysis tools
